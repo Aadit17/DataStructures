@@ -28,8 +28,6 @@ var reverseList = function(head){
        prev=current;
        current=nextnode;
    
- 
-    
    }return prev;
 
 

@@ -1,9 +1,10 @@
-const fun1=(x,y)=>{
-
-    if (x == 0)
-        return y;
-    else
-        return fun1(x - 1, x + y);
+const subStrings=(str,i,ans)=>{
+    if(i==str.length){
+        console.log(ans)
+        return
+    }
+    subStrings(str,i+1,ans)
+    subStrings(str,i+1,ans+str[i])
+    subStrings(str,i+1,ans+str.charCodeAt(i))
 }
-
-console.log(fun1(5,6))
+console.log(subStrings("AB",0,""))

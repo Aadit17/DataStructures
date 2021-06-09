@@ -12,9 +12,8 @@ const lastocc=(arr,key,i)=>{
     if(remarr !== -1)
         return remarr
     if(arr[i]==key)
-        return i 
+        return i
     return -1
 }
-
 
 console.log(lastocc([1,2,3,2,5],2,0))
